@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mohamed Lukman MA | Java Full Stack Developer</title>
-<meta name="description" content="Portfolio of Mohamed Lukman, a Java Full Stack Developer specializing in Java, Spring Boot, React, JavaScript and MySQL.">
+<meta name="description" content="Portfolio of Mohamed Lukman MA, a Java Full Stack Developer specializing in Java, Spring Boot, React, JavaScript and MySQL.">
 <meta property="og:title" content="Mohamed Lukman MA | Java Full Stack Developer">
 <meta property="og:description" content="Building scalable, responsive and user-focused web applications with Java, Spring Boot, React and MySQL.">
 <meta property="og:type" content="website">
@@ -35,14 +35,12 @@ body{
   transition:background .35s ease, color .35s ease;
   overflow-x:hidden; position:relative;
 }
-/* Background gradient */
 body::before{
   content:""; position:fixed; inset:0; pointer-events:none; z-index:-1;
   background:
     radial-gradient(circle at 15% 10%, color-mix(in srgb, var(--accent) 8%, transparent), transparent 45%),
     radial-gradient(circle at 85% 90%, color-mix(in srgb, var(--accent) 5%, transparent), transparent 50%);
 }
-/* Cursor glow */
 .cursor-glow{
   position:fixed; width:420px; height:420px; border-radius:50%;
   background:radial-gradient(circle, color-mix(in srgb, var(--accent) 18%, transparent), transparent 60%);
@@ -69,12 +67,10 @@ section::before{
 .section-title{font-size:clamp(28px,4vw,42px); font-weight:700; margin-bottom:16px;}
 .section-lede{color:var(--muted); max-width:620px; font-size:16px; margin-bottom:56px;}
 
-/* reveal */
 .reveal{opacity:0; transform:translateY(28px); transition:opacity .7s cubic-bezier(.2,.65,.3,1), transform .7s cubic-bezier(.2,.65,.3,1);}
 .reveal.in{opacity:1; transform:translateY(0);}
 @media (prefers-reduced-motion: reduce){ .reveal{opacity:1; transform:none; transition:none;} }
 
-/* NAV */
 header{
   position:fixed; top:0; left:0; right:0; z-index:100;
   border-bottom:1px solid transparent;
@@ -121,7 +117,6 @@ nav.wrap{display:flex; align-items:center; justify-content:space-between; height
   .hamburger{display:flex;}
 }
 
-/* HERO */
 .hero{padding-top:190px; padding-bottom:110px; position:relative;}
 .hero-grid{display:grid; grid-template-columns:1.15fr .85fr; gap:60px; align-items:center;}
 @media(max-width:900px){ .hero-grid{grid-template-columns:1fr; gap:56px;} .hero{padding-top:150px;} }
@@ -135,7 +130,6 @@ nav.wrap{display:flex; align-items:center; justify-content:space-between; height
 .hero-ctas{display:flex; gap:14px; margin:34px 0 30px; flex-wrap:wrap;}
 .hero-socials{display:flex; gap:14px;}
 
-/* Terminal */
 .terminal{
   background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
   box-shadow:var(--shadow); overflow:hidden;
@@ -151,7 +145,6 @@ nav.wrap{display:flex; align-items:center; justify-content:space-between; height
 .terminal-body .cursor{display:inline-block; width:7px; height:15px; background:var(--accent); vertical-align:middle; animation:blink 1s step-end infinite;}
 @keyframes blink{50%{opacity:0;}}
 
-/* Animated avatar ring */
 .avatar-wrapper{position:relative; width:170px; height:170px; margin:24px auto 0;}
 .avatar-wrapper img{width:100%; height:100%; border-radius:50%; object-fit:cover; position:relative; z-index:2; border:3px solid var(--accent);}
 .avatar-wrapper::before{content:""; position:absolute; inset:-6px; border-radius:50%; background:conic-gradient(from 0deg, var(--accent), var(--amber), var(--accent)); animation:spin 6s linear infinite; z-index:1;}
@@ -159,7 +152,6 @@ nav.wrap{display:flex; align-items:center; justify-content:space-between; height
 .avatar-meta{text-align:center; font-family:'JetBrains Mono',monospace; font-size:13px; color:var(--muted); margin-top:14px;}
 .avatar-meta strong{display:block; color:var(--text); font-family:'Inter',sans-serif; font-size:14.5px; margin-bottom:2px;}
 
-/* STATS */
 .stats-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:18px; text-align:center;}
 @media(max-width:768px){.stats-grid{grid-template-columns:repeat(2,1fr);}}
 .stat-card{background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:24px 14px; position:relative; overflow:hidden; transition:transform .25s ease, border-color .25s ease, box-shadow .25s ease;}
@@ -169,7 +161,6 @@ nav.wrap{display:flex; align-items:center; justify-content:space-between; height
 .stat-card::after{content:""; position:absolute; top:var(--y,0); left:var(--x,0); width:200px; height:200px; background:radial-gradient(circle, color-mix(in srgb, var(--accent) 18%, transparent), transparent 60%); transform:translate(-50%,-50%); opacity:0; transition:opacity .3s ease; pointer-events:none;}
 .stat-card:hover::after{opacity:1;}
 
-/* ABOUT */
 .about-grid{display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:start;}
 @media(max-width:900px){ .about-grid{grid-template-columns:1fr; gap:40px;} }
 .about-text p{color:var(--muted); margin-bottom:16px; font-size:16px;}
@@ -187,7 +178,6 @@ nav.wrap{display:flex; align-items:center; justify-content:space-between; height
 }
 .hcard:hover::after, .skill-card:hover::after, .cert-card:hover::after, .contact-row:hover::after, .tl-card:hover::after, .pcard:hover::after{opacity:1;}
 
-/* SKILLS */
 .skills-groups{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
 @media(max-width:900px){.skills-groups{grid-template-columns:repeat(2,1fr);}}
 @media(max-width:560px){.skills-groups{grid-template-columns:1fr;}}
@@ -201,8 +191,7 @@ nav.wrap{display:flex; align-items:center; justify-content:space-between; height
 }
 .badge:hover{border-color:var(--accent-dim); color:var(--accent); transform:translateY(-2px);}
 
-/* EXPERIENCE */
-.exp-card{background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:34px; box-shadow:var(--shadow); position:relative; overflow:hidden;}
+.exp-card{background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:34px; box-shadow:var(--shadow); position:relative; overflow:hidden; margin-bottom: 24px;}
 .exp-head{display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; margin-bottom:18px; border-bottom:1px solid var(--border); padding-bottom:18px;}
 .exp-role{font-size:20px; font-weight:700; margin-bottom:4px;}
 .exp-org{color:var(--accent); font-family:'JetBrains Mono',monospace; font-size:14px;}
@@ -216,7 +205,6 @@ nav.wrap{display:flex; align-items:center; justify-content:space-between; height
 .exp-list li::before{content:"▸"; position:absolute; left:0; color:var(--accent);}
 .tech-row{display:flex; flex-wrap:wrap; gap:8px;}
 
-/* PROJECTS */
 .project-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
 @media(max-width:980px){.project-grid{grid-template-columns:1fr 1fr;}}
 @media(max-width:680px){.project-grid{grid-template-columns:1fr;}}
@@ -228,7 +216,7 @@ nav.wrap{display:flex; align-items:center; justify-content:space-between; height
 .pcard:hover{transform:translateY(-6px); box-shadow:var(--shadow); border-color:var(--accent-dim);}
 .pcard-media{height:160px; overflow:hidden; position:relative; background:linear-gradient(135deg, var(--surface-2), var(--surface));}
 .pcard-media::after{content:""; position:absolute; inset:0; background-image:linear-gradient(rgba(86,232,201,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(86,232,201,.05) 1px, transparent 1px); background-size:30px 30px;}
-.pcard-media .glyph{position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-family:'JetBrains Mono',monospace; font-size:13px; color:var(--accent); z-index:2; transition:transform .5s ease;}
+.pcard-media .glyph{position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-family:'JetBrains Mono',monospace; font-size:13px; color:var(--accent); z-index:2; transition:transform .5s ease; text-align:center; padding: 0 10px;}
 .pcard:hover .glyph{transform:scale(1.12);}
 .pcard-body{padding:22px; display:flex; flex-direction:column; flex:1; position:relative; z-index:1;}
 .pcard-body h3{font-size:17px; margin-bottom:8px;}
@@ -237,52 +225,57 @@ nav.wrap{display:flex; align-items:center; justify-content:space-between; height
 .tag{font-size:11.5px; font-family:'JetBrains Mono',monospace; padding:4px 9px; border-radius:6px; background:var(--surface-2); color:var(--muted); border:1px solid var(--border);}
 .pcard-actions{display:flex; gap:10px;}
 .pcard-actions .btn{padding:8px 16px; font-size:12.5px;}
-.placeholder-card{border-style:dashed; opacity:.7; display:flex; align-items:center; justify-content:center; text-align:center; padding:40px 22px; min-height:280px;}
-.placeholder-card span.mono{color:var(--muted); font-size:13px;}
 
-/* modal */
-.modal-overlay{position:fixed; inset:0; background:rgba(4,8,12,.72); backdrop-filter:blur(4px); display:none; align-items:center; justify-content:center; z-index:200; padding:24px;}
+.modal-overlay{position:fixed; inset:0; background:rgba(4,8,12,.85); backdrop-filter:blur(8px); display:none; align-items:center; justify-content:center; z-index:200; padding:24px; animation: fadeIn .3s ease;}
 .modal-overlay.open{display:flex;}
-.modal{background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); max-width:620px; width:100%; max-height:85vh; overflow-y:auto; padding:36px; position:relative; box-shadow:var(--shadow);}
-.modal-close{position:absolute; top:18px; right:18px; width:34px; height:34px; border-radius:50%; border:1px solid var(--border); background:var(--surface-2); cursor:pointer; color:var(--text); font-size:16px;}
+@keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
+.modal{background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); max-width:620px; width:100%; max-height:85vh; overflow-y:auto; padding:36px; position:relative; box-shadow:var(--shadow); animation: slideUp .3s ease;}
+@keyframes slideUp{from{transform:translateY(20px); opacity:0;}to{transform:translateY(0); opacity:1;}}
+.modal-close{position:absolute; top:18px; right:18px; width:34px; height:34px; border-radius:50%; border:1px solid var(--border); background:var(--surface-2); cursor:pointer; color:var(--text); font-size:16px; z-index: 10; transition:.2s;}
+.modal-close:hover{background: var(--accent); color: #06110E; transform: rotate(90deg);}
 .modal h3{font-size:24px; margin-bottom:6px;}
 .modal .modal-sub{color:var(--accent); font-family:'JetBrains Mono',monospace; font-size:13px; margin-bottom:22px;}
 .modal-section{margin-bottom:18px;}
 .modal-section h5{font-size:12.5px; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); margin-bottom:6px; font-family:'JetBrains Mono',monospace;}
 .modal-section p, .modal-section ul{font-size:14.5px; color:var(--text);}
 .modal-section ul{padding-left:18px; color:var(--muted);}
-.modal-actions{display:flex; gap:12px; margin-top:24px;}
+.modal-actions{display:flex; gap:12px; margin-top:24px; flex-wrap: wrap;}
 
-/* EDUCATION / TIMELINE */
+.cert-modal{background:var(--surface-2); padding:0; overflow:hidden;}
+.cert-modal-header{padding: 20px 30px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; background: var(--surface);}
+.cert-modal-header h3{margin:0; font-size: 20px;}
+.cert-modal-header p{color: var(--muted); font-size: 13px; margin-top: 4px;}
+.cert-modal-body{max-height: 70vh; overflow-y: auto; padding: 24px; background: #f0f0f0; text-align: center;}
+.cert-modal-body img{width: 100%; max-width: 800px; height: auto; box-shadow: 0 10px 40px rgba(0,0,0,0.3); border-radius: 4px; margin: 0 auto;}
+.cert-modal-footer{padding: 18px 30px; border-top: 1px solid var(--border); display: flex; gap: 12px; justify-content: center; background: var(--surface); flex-wrap: wrap;}
+
 .timeline{position:relative; padding-left:34px; border-left:2px solid var(--border);}
-.tl-item{position:relative; padding-bottom:6px;}
+.tl-item{position:relative; padding-bottom:24px;}
+.tl-item:last-child{padding-bottom: 0;}
 .tl-item::before{content:""; position:absolute; left:-42px; top:4px; width:16px; height:16px; border-radius:50%; background:var(--bg); border:2px solid var(--accent);}
 .tl-card{background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:26px 28px; box-shadow:var(--shadow); position:relative; overflow:hidden;}
 .tl-card h3{font-size:19px; margin-bottom:6px;}
 .tl-card .org{color:var(--accent); font-family:'JetBrains Mono',monospace; font-size:14px; margin-bottom:4px;}
-.tl-card .meta{color:var(--muted); font-size:13.5px;}
+.tl-card .meta{color:var(--muted); font-size:13.5px; margin-bottom: 6px;}
+.tl-card .grade{color: var(--text); font-size: 13.5px; font-family: 'JetBrains Mono', monospace;}
 
-/* CERTIFICATIONS */
-.cert-grid{display:grid; grid-template-columns:1fr; gap:18px; max-width:720px;}
+.cert-grid{display:grid; grid-template-columns:1fr; gap:18px; max-width:760px;}
 .cert-card{display:flex; justify-content:space-between; align-items:center; gap:20px; background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:24px 26px; flex-wrap:wrap; position:relative; overflow:hidden; transition:transform .25s ease, border-color .25s ease;}
 .cert-card:hover{transform:translateY(-4px); border-color:var(--accent-dim);}
 .cert-card h3{font-size:16.5px; margin-bottom:6px;}
 .cert-card .org{color:var(--accent); font-size:13.5px; font-family:'JetBrains Mono',monospace; margin-bottom:6px;}
-.cert-card p{font-size:13.5px; color:var(--muted); max-width:420px;}
+.cert-card p{font-size:13.5px; color:var(--muted); max-width:460px;}
 
-/* GITHUB */
 .github-panel{background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:50px 44px; text-align:center; box-shadow:var(--shadow); background-image:radial-gradient(circle at 30% 20%, color-mix(in srgb, var(--accent) 7%, transparent), transparent 55%);}
 .github-panel h2{font-size:clamp(24px,3.4vw,34px); margin-bottom:14px;}
 .github-panel p{color:var(--muted); max-width:480px; margin:0 auto 28px;}
 .gh-user{font-family:'JetBrains Mono',monospace; color:var(--accent); font-size:14px; margin-bottom:24px;}
 
-/* RESUME CTA */
 .resume-cta{background:linear-gradient(135deg, var(--surface), var(--surface-2)); border:1px solid var(--border); border-radius:var(--radius); padding:56px 44px; text-align:center; box-shadow:var(--shadow);}
 .resume-cta h2{font-size:clamp(24px,3.4vw,34px); margin-bottom:14px;}
 .resume-cta p{color:var(--muted); margin-bottom:30px;}
 .cta-row{display:flex; gap:14px; justify-content:center; flex-wrap:wrap;}
 
-/* CONTACT */
 .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:56px;}
 @media(max-width:900px){.contact-grid{grid-template-columns:1fr; gap:36px;}}
 .form-group{margin-bottom:18px;}
@@ -301,17 +294,15 @@ nav.wrap{display:flex; align-items:center; justify-content:space-between; height
 .contact-row:hover{border-color:var(--accent-dim); transform:translateX(4px);}
 .contact-row .ic{width:38px; height:38px; border-radius:50%; background:var(--surface-2); display:flex; align-items:center; justify-content:center; color:var(--accent); flex-shrink:0;}
 .contact-row .lbl{font-size:12px; color:var(--muted); font-family:'JetBrains Mono',monospace;}
-.contact-row .val{font-size:14.5px;}
+.contact-row .val{font-size:14.5px; word-break: break-all;}
 #formStatus{margin-top:16px; font-size:13.5px; padding:12px 14px; border-radius:8px; display:none;}
 #formStatus.show{display:block;}
 #formStatus.success{background:color-mix(in srgb, var(--accent) 15%, transparent); color:var(--accent); border:1px solid var(--accent-dim);}
 
-/* SCROLL TO TOP */
 #scrollTop{position:fixed; bottom:24px; right:24px; z-index:90; opacity:0; pointer-events:none; transition:opacity .3s ease, transform .3s ease;}
 #scrollTop.show{opacity:1; pointer-events:auto;}
 #scrollTop:hover{transform:translateY(-4px);}
 
-/* FOOTER */
 footer{border-top:1px solid var(--border); padding:40px 0;}
 .footer-row{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;}
 .footer-row p{font-size:13.5px; color:var(--muted);}
@@ -342,12 +333,11 @@ footer{border-top:1px solid var(--border); padding:40px 0;}
       <a class="icon-btn" href="https://github.com/Mohamedlukman02" target="_blank" rel="noopener" aria-label="GitHub">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-1.94c-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.18-1.18 3.18-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.07.78 2.15v3.19c0 .3.21.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
       </a>
-      <a class="icon-btn" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <a class="icon-btn" href="https://www.linkedin.com/in/mohamed-lukman-ma/" target="_blank" rel="noopener" aria-label="LinkedIn">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
       </a>
       <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
-      <a class="btn btn-outline" href="Mohamed-Lukman-Resume.jpg" target="_blank" id="navResumeBtn">Resume</a>
-
+      <a class="btn btn-outline" href="#" id="navResumeBtn">Resume</a>
       <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </nav>
@@ -375,13 +365,12 @@ footer{border-top:1px solid var(--border); padding:40px 0;}
         <p class="desc">Final-year B.Tech Information Technology student passionate about full-stack development and software engineering.</p>
         <div class="hero-ctas">
           <a href="#projects" class="btn btn-primary">View My Projects →</a>
-          <a href="Mohamed-Lukman-Resume.jpg" download class="btn btn-outline">Download Resume</a>
-
+          <a href="#" id="heroResumeBtn" class="btn btn-outline">View Resume</a>
         </div>
         <div class="hero-socials">
           <a class="icon-btn" href="https://github.com/Mohamedlukman02" target="_blank" rel="noopener" aria-label="GitHub"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-1.94c-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.18-1.18 3.18-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.07.78 2.15v3.19c0 .3.21.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></a>
-          <a class="icon-btn" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
-          <a class="icon-btn" href="mailto:mohamedlukman0204@gmail.com" aria-label="Email"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg></a>
+          <a class="icon-btn" href="https://www.linkedin.com/in/mohamed-lukman-ma/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
+          <a class="icon-btn" href="tel:9342376295" aria-label="Phone"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
         </div>
       </div>
 
@@ -391,9 +380,9 @@ footer{border-top:1px solid var(--border); padding:40px 0;}
           <div class="terminal-body" id="terminalBody"></div>
         </div>
         <div class="avatar-wrapper">
-          <img src="Mohamed-Lukman.jpg" alt="Mohamed Lukman">
+          <img src="Mohamed-Lukman.jpg" alt="Mohamed Lukman" onerror="this.src='https://ui-avatars.com/api/?name=Mohamed+Lukman&size=200&background=56E8C9&color=06110E&bold=true'">
         </div>
-        <div class="avatar-meta"><strong>Mohamed Lukman</strong>B.Tech IT · Class of 2026</div>
+        <div class="avatar-meta"><strong>Mohamed Lukman M.A</strong>B.Tech IT · Class of 2026</div>
       </div>
     </div>
   </section>
@@ -402,10 +391,10 @@ footer{border-top:1px solid var(--border); padding:40px 0;}
   <section style="padding:60px 0;">
     <div class="wrap">
       <div class="stats-grid">
-        <div class="stat-card reveal"><span class="stat-num">2+</span><span class="stat-lbl">Projects Built</span></div>
-        <div class="stat-card reveal"><span class="stat-num">8+</span><span class="stat-lbl">Technologies</span></div>
-        <div class="stat-card reveal"><span class="stat-num">1</span><span class="stat-lbl">Internship</span></div>
-        <div class="stat-card reveal"><span class="stat-num">2026</span><span class="stat-lbl">Graduating</span></div>
+        <div class="stat-card reveal"><span class="stat-num">3+</span><span class="stat-lbl">Projects Built</span></div>
+        <div class="stat-card reveal"><span class="stat-num">10+</span><span class="stat-lbl">Technologies</span></div>
+        <div class="stat-card reveal"><span class="stat-num">2</span><span class="stat-lbl">Internships</span></div>
+        <div class="stat-card reveal"><span class="stat-num">8.0</span><span class="stat-lbl">CGPA</span></div>
       </div>
     </div>
   </section>
@@ -418,14 +407,14 @@ footer{border-top:1px solid var(--border); padding:40px 0;}
       <div class="about-grid">
         <div class="about-text reveal">
           <p>I am a final-year B.Tech Information Technology student and aspiring Java Full Stack Developer with a strong interest in building reliable and scalable web applications.</p>
-          <p>I work with Java, Spring Boot, React.js, JavaScript, HTML, CSS and MySQL. I enjoy developing complete applications from frontend interfaces to backend APIs and database integration.</p>
+          <p>I work with Java, Spring Boot, React.js, JavaScript, HTML, CSS, Python and MySQL. I enjoy developing complete applications from frontend interfaces to backend APIs and database integration.</p>
           <p>I am continuously improving my problem-solving, programming and software development skills while preparing for opportunities in Java Full Stack Development and Software Engineering.</p>
         </div>
         <div class="highlight-grid reveal">
-          <div class="hcard"><span class="emoji">🎓</span><span class="label">B.Tech Information Technology</span></div>
-          <div class="hcard"><span class="emoji">💻</span><span class="label">Java Full Stack Development</span></div>
-          <div class="hcard"><span class="emoji">🚀</span><span class="label">Web Application Development</span></div>
-          <div class="hcard"><span class="emoji">📚</span><span class="label">Continuous Learning</span></div>
+          <div class="hcard"><span class="emoji">🎓</span><span class="label">B.Tech Information Technology</span><p style="color: var(--muted); font-size: 12.5px;">CGPA: 8.0/10 · 2022-2026</p></div>
+          <div class="hcard"><span class="emoji">💻</span><span class="label">Java Full Stack Development</span><p style="color: var(--muted); font-size: 12.5px;">Java · Spring Boot · React · MySQL</p></div>
+          <div class="hcard"><span class="emoji">🚀</span><span class="label">Web Application Development</span><p style="color: var(--muted); font-size: 12.5px;">Full-stack apps · REST APIs</p></div>
+          <div class="hcard"><span class="emoji">📚</span><span class="label">Continuous Learning</span><p style="color: var(--muted); font-size: 12.5px;">AI/ML · Spring Boot · React</p></div>
         </div>
       </div>
     </div>
@@ -472,6 +461,7 @@ footer{border-top:1px solid var(--border); padding:40px 0;}
     <div class="wrap">
       <div class="eyebrow">work-experience</div>
       <h2 class="section-title reveal">Experience</h2>
+
       <div class="exp-card reveal">
         <div class="exp-head">
           <div>
@@ -483,18 +473,41 @@ footer{border-top:1px solid var(--border); padding:40px 0;}
         </div>
         <div class="exp-project"><strong>Project:</strong> Bill Payment Management System</div>
         <ul class="exp-list">
-          <li>Developed frontend interfaces</li>
-          <li>Implemented backend functionality using Java</li>
-          <li>Integrated Java application with MySQL</li>
-          <li>Implemented login functionality</li>
-          <li>Developed bill management features</li>
-          <li>Implemented payment processing functionality</li>
-          <li>Added transaction history</li>
-          <li>Integrated frontend and backend</li>
-          <li>Tested and debugged application functionality</li>
-          <li>Improved responsive UI</li>
+          <li>Developed a full-stack web application using Java, HTML, CSS, JavaScript, JDBC, and MySQL.</li>
+          <li>Implemented bill payment, user authentication, and transaction management features.</li>
+          <li>Designed a responsive interface and integrated backend services.</li>
+          <li>Tested and debugged the application to ensure reliability and performance.</li>
         </ul>
-        <div class="tech-row" id="expTech"></div>
+        <div class="tech-row">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Java</span>
+          <span class="tag">JDBC</span>
+          <span class="tag">MySQL</span>
+        </div>
+      </div>
+
+      <div class="exp-card reveal">
+        <div class="exp-head">
+          <div>
+            <div class="exp-role">Python Developer Intern</div>
+            <div class="exp-org">Techmaghi</div>
+            <div class="exp-loc">Kochi, Kerala</div>
+          </div>
+          <div class="exp-time">Sep 2024</div>
+        </div>
+        <div class="exp-project"><strong>Project:</strong> Python Web Applications</div>
+        <ul class="exp-list">
+          <li>Developed Python-based web applications</li>
+          <li>Gained hands-on experience with Python frameworks</li>
+          <li>Worked on frontend and backend integration</li>
+          <li>Collaborated with the development team on live projects</li>
+        </ul>
+        <div class="tech-row">
+          <span class="tag">Python</span>
+          <span class="tag">Web Development</span>
+        </div>
       </div>
     </div>
   </section>
@@ -519,7 +532,24 @@ footer{border-top:1px solid var(--border); padding:40px 0;}
           <div class="tl-card">
             <h3>B.Tech – Information Technology</h3>
             <div class="org">M.A.M College of Engineering, Trichy</div>
-            <div class="meta">Expected Graduation: 2026</div>
+            <div class="meta">2022 – 2026</div>
+            <div class="grade">CGPA: 8.0/10</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-card">
+            <h3>HSC (Higher Secondary)</h3>
+            <div class="org">TGN Municipal HR.SEC.SCHOOL, Mayiladuthurai</div>
+            <div class="meta">2022</div>
+            <div class="grade">Percentage: 54%</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-card">
+            <h3>SSLC (Secondary School)</h3>
+            <div class="org">Mayura Matriculation School, Mayiladuthurai</div>
+            <div class="meta">2020</div>
+            <div class="grade">Percentage: 70%</div>
           </div>
         </div>
       </div>
@@ -556,8 +586,7 @@ footer{border-top:1px solid var(--border); padding:40px 0;}
         <h2>Interested in working with me?</h2>
         <p>I'm actively looking for opportunities in Java Full Stack Development and Software Engineering.</p>
         <div class="cta-row">
-          <a href="Mohamed-Lukman-Resume.jpg" download class="btn btn-primary">Download Resume</a>
-
+          <a href="#" id="ctaResumeBtn" class="btn btn-primary">View Resume</a>
           <a href="#contact" class="btn btn-outline">Contact Me</a>
         </div>
       </div>
@@ -597,18 +626,26 @@ footer{border-top:1px solid var(--border); padding:40px 0;}
           <p class="form-note">This form is UI-ready and validated on the client. Connect it to an email service (e.g. Formspree / EmailJS) to start receiving messages.</p>
         </form>
         <div class="contact-info reveal">
-          <a class="contact-row" href="mailto:mohamedlukman@gmail.com">
+          <a class="contact-row" href="mailto:mdlukman0204@gmail.com">
             <div class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg></div>
-            <div><div class="lbl">email</div><div class="val">mohamedlukman@gmail.com</div></div>
+            <div><div class="lbl">email</div><div class="val">mdlukman0204@gmail.com</div></div>
           </a>
-          <a class="contact-row" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+          <a class="contact-row" href="tel:9342376295">
+            <div class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div><div class="lbl">phone</div><div class="val">+91 93423 76295</div></div>
+          </a>
+          <a class="contact-row" href="https://www.linkedin.com/in/mohamed-lukman-ma/" target="_blank" rel="noopener">
             <div class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></div>
-            <div><div class="lbl">linkedin</div><div class="val">Connect on LinkedIn</div></div>
+            <div><div class="lbl">linkedin</div><div class="val">mohamed-lukman-ma</div></div>
           </a>
           <a class="contact-row" href="https://github.com/Mohamedlukman02" target="_blank" rel="noopener">
             <div class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-1.94c-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.18-1.18 3.18-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.07.78 2.15v3.19c0 .3.21.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></div>
             <div><div class="lbl">github</div><div class="val">github.com/Mohamedlukman02</div></div>
           </a>
+          <div class="contact-row" style="cursor: default;">
+            <div class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div><div class="lbl">location</div><div class="val">Mayiladuthurai, Tamilnadu</div></div>
+          </div>
         </div>
       </div>
     </div>
@@ -617,11 +654,11 @@ footer{border-top:1px solid var(--border); padding:40px 0;}
 
 <footer>
   <div class="wrap footer-row">
-    <p>© 2026 Mohamed Lukman. All rights reserved.</p>
+    <p>© 2026 Mohamed Lukman M.A. All rights reserved.</p>
     <div class="footer-socials">
       <a class="icon-btn" href="https://github.com/Mohamedlukman02" target="_blank" rel="noopener" aria-label="GitHub"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55v-1.94c-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.18-1.18 3.18-1.18.63 1.58.23 2.75.11 3.04.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.07.78 2.15v3.19c0 .3.21.66.79.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></a>
-      <a class="icon-btn" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
-      <a class="icon-btn" href="mailto:mohamedlukman@gmail.com" aria-label="Email"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg></a>
+      <a class="icon-btn" href="https://www.linkedin.com/in/mohamed-lukman-ma/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
+      <a class="icon-btn" href="mailto:mdlukman0204@gmail.com" aria-label="Email"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg></a>
     </div>
   </div>
   <p class="footer-note">Built with modern web technologies.</p>
@@ -637,32 +674,106 @@ footer{border-top:1px solid var(--border); padding:40px 0;}
   </div>
 </div>
 
+<!-- RESUME MODAL -->
+<div class="modal-overlay" id="resumeModal">
+  <div class="modal cert-modal" style="max-width: 900px;">
+    <button class="modal-close" id="resumeModalClose" style="z-index: 10;">✕</button>
+    <div class="cert-modal-header">
+      <div>
+        <h3>Mohamed Lukman M.A</h3>
+        <p>Java Full Stack Developer · mdlukman0204@gmail.com · +91 93423 76295</p>
+      </div>
+    </div>
+    <div class="cert-modal-body">
+      <img src="Mohamed-Lukman-Resume.jpg" alt="Mohamed Lukman Resume" onerror="this.parentElement.innerHTML='<div style=\'padding: 60px 20px; color: #555; font-family: Inter, sans-serif;\'><h3 style=\'color: #222; margin-bottom: 12px;\'>📄 Resume Image Not Found</h3><p>Please make sure <code style=\'background: #ddd; padding: 2px 6px; border-radius: 4px;\'>Mohamed-Lukman-Resume.jpg</code> is in the project folder.</p></div>'">
+    </div>
+    <div class="cert-modal-footer">
+      <a href="Mohamed-Lukman-Resume.jpg" download class="btn btn-primary">Download Resume</a>
+      <a href="Mohamed-Lukman-Resume.jpg" target="_blank" rel="noopener" class="btn btn-outline">Open Full Size</a>
+    </div>
+  </div>
+</div>
+
+<!-- RETECH CERTIFICATE MODAL -->
+<div class="modal-overlay" id="retechModal">
+  <div class="modal cert-modal" style="max-width: 900px;">
+    <button class="modal-close" id="retechModalClose" style="z-index: 10;">✕</button>
+    <div class="cert-modal-header">
+      <div>
+        <h3>🏆 Retech Solutions — Internship Certificate</h3>
+        <p>Java Full Stack Developer Intern · Jul 14 – Aug 14, 2025</p>
+      </div>
+    </div>
+    <div class="cert-modal-body">
+      <img src="RetechCertification.jpg" alt="Retech Internship Certificate" onerror="this.parentElement.innerHTML='<div style=\'padding: 60px 20px; color: #555; font-family: Inter, sans-serif;\'><h3 style=\'color: #222; margin-bottom: 12px;\'>🏆 Certificate Image Not Found</h3><p>Please make sure <code style=\'background: #ddd; padding: 2px 6px; border-radius: 4px;\'>RetechCertification.jpg</code> is in the project folder.</p></div>'">
+    </div>
+    <div class="cert-modal-footer">
+      <a href="RetechCertification.jpg" download class="btn btn-primary">Download Certificate</a>
+      <a href="RetechCertification.jpg" target="_blank" rel="noopener" class="btn btn-outline">Open Full Size</a>
+    </div>
+  </div>
+</div>
+
+<!-- FORAGE / TATA CERTIFICATE MODAL -->
+<div class="modal-overlay" id="forageModal">
+  <div class="modal cert-modal" style="max-width: 900px;">
+    <button class="modal-close" id="forageModalClose" style="z-index: 10;">✕</button>
+    <div class="cert-modal-header">
+      <div>
+        <h3>🏆 Forage / TATA Certificate</h3>
+        <p>GenAI-Powered Data Analytics Job Simulation · December 2025</p>
+      </div>
+    </div>
+    <div class="cert-modal-body">
+      <img src="TATA-Certification.jpeg" alt="Forage TATA Certificate" onerror="this.parentElement.innerHTML='<div style=\'padding: 60px 20px; color: #555; font-family: Inter, sans-serif;\'><h3 style=\'color: #222; margin-bottom: 12px;\'>🏆 Certificate Image Not Found</h3><p>Please make sure <code style=\'background: #ddd; padding: 2px 6px; border-radius: 4px;\'>TATA-Certification.jpeg</code> is in the project folder.</p></div>'">
+    </div>
+    <div class="cert-modal-footer">
+      <a href="TATA-Certification.jpeg" download class="btn btn-primary">Download Certificate</a>
+      <a href="TATA-Certification.jpeg" target="_blank" rel="noopener" class="btn btn-outline">Open Full Size</a>
+    </div>
+  </div>
+</div>
+
 <script>
 /* ============ DATA ============ */
 const skillGroups = [
-  {name:"programming", items:["Java","JavaScript","SQL"]},
+  {name:"programming", items:["Java","JavaScript","Python","SQL"]},
   {name:"frontend", items:["HTML5","CSS3","JavaScript","React.js","Bootstrap","Tailwind CSS"]},
-  {name:"backend", items:["Core Java","Spring Boot","JDBC","REST APIs"]},
+  {name:"backend", items:["Core Java","Spring Boot","JDBC","REST APIs","Python"]},
   {name:"database", items:["MySQL","DBMS"]},
-  {name:"tools", items:["Git","GitHub","VS Code","IntelliJ IDEA","Postman"]},
+  {name:"tools", items:["Git","GitHub","VS Code","IntelliJ IDEA","Postman","Eclipse"]},
+  {name:"ai/ml", items:["OpenCV","FaceNet","Streamlit","CrewAI"]},
   {name:"core-concepts", items:["OOP","Data Structures & Algorithms","DBMS","Operating Systems"]},
 ];
 
-const expTech = ["HTML","CSS","JavaScript","Java","JDBC","MySQL"];
-
 const projects = [
+  {
+    id:"missingperson",
+    name:"AI Missing Person Identification",
+    sub:"AI-Powered Web Application",
+    desc:"An AI-powered web application that uses facial recognition to help identify missing persons by comparing uploaded images with stored records.",
+    tech:["Java","Spring Boot","React.js","Python","OpenCV","FaceNet","MySQL"],
+    features:["Facial recognition with FaceNet","Image upload & comparison","Missing person registration","Secure user authentication","Confidence score matching","REST API integration","AI + Backend + Frontend combined"],
+    github:"https://github.com/Mohamedlukman02",
+    demo:null,
+    overview:"An AI-powered web application designed to identify missing persons using facial recognition technology. Combines Java Spring Boot backend, React frontend, Python AI services, and MySQL database.",
+    problem:"Manually searching for missing persons across records is slow and often unsuccessful without proper tools.",
+    solution:"A full-stack AI application that uses FaceNet-based facial recognition to match uploaded images against stored missing person records, returning confidence scores.",
+    challenges:"Integrating Python AI modules (FaceNet, OpenCV) with a Java Spring Boot backend via REST APIs and structuring MySQL for fast image metadata retrieval.",
+    learned:"Practical experience with AI integration, face recognition, multi-language full-stack architecture, and building production-ready REST APIs."
+  },
   {
     id:"hotelfinder",
     name:"HotelFinder Pro",
-    sub:"Hotel Booking Crew",
-    desc:"An AI-powered hotel discovery and booking assistance application designed to help users search and explore hotel options through an intelligent workflow.",
+    sub:"AI Agentic Workflow",
+    desc:"An AI-powered hotel discovery and booking assistance application using an intelligent agent workflow.",
     tech:["Python","Streamlit","CrewAI","Browserbase","LLM","APIs"],
-    features:["Hotel search","AI-assisted hotel discovery","Intelligent agent workflow","Hotel information presentation","Interactive Streamlit interface","Automated workflow using CrewAI"],
+    features:["AI-assisted hotel discovery","Intelligent agent workflow","Automated hotel search","Interactive Streamlit interface","Browser automation","LLM-driven results"],
     github:"https://github.com/Mohamedlukman02",
     demo:null,
-    overview:"An AI-powered hotel discovery and booking assistance application designed to help users search and explore hotel options through an intelligent workflow.",
-    problem:"Manually researching hotels across multiple sites is slow and fragmented.",
-    solution:"An agentic workflow built with CrewAI orchestrates search and presents curated hotel information through an interactive Streamlit interface.",
+    overview:"An AI-powered hotel discovery and booking assistance application designed to help users search and explore hotel options through an intelligent multi-agent workflow.",
+    problem:"Manually researching hotels across multiple sites is slow, fragmented, and overwhelming.",
+    solution:"An agentic workflow built with CrewAI orchestrates hotel search and presents curated hotel information through an interactive Streamlit interface.",
     challenges:"Coordinating multi-agent workflows reliably and structuring LLM output into a clean, usable UI.",
     learned:"Practical experience with agentic AI workflows, browser automation, and building interactive Python UIs."
   },
@@ -672,10 +783,10 @@ const projects = [
     sub:"Full-Stack Web Application",
     desc:"A full-stack web application for managing bills, payments and transaction history.",
     tech:["HTML","CSS","JavaScript","Java","JDBC","MySQL"],
-    features:["User login","Bill management","Payment processing","Transaction history","Database integration","Responsive interface","Frontend/backend integration"],
+    features:["User login & authentication","Bill management","Payment processing","Transaction history","Database integration","Responsive interface"],
     github:"https://github.com/Mohamedlukman02",
     demo:null,
-    overview:"A full-stack web application for managing bills, payments and transaction history — built during a Java Full Stack Developer internship.",
+    overview:"A full-stack web application for managing bills, payments and transaction history — built during a Java Full Stack Developer internship at Retech Solutions.",
     problem:"Manual bill tracking and payment record-keeping is error-prone and hard to audit.",
     solution:"A Java + JDBC + MySQL backend paired with a responsive frontend handles login, bill management, payments and transaction history in one place.",
     challenges:"Integrating the frontend and Java backend cleanly, and structuring MySQL tables for accurate transaction history.",
@@ -684,10 +795,11 @@ const projects = [
 ];
 
 const certifications = [
-  {title:"GenAI-Powered Data Analytics Job Simulation", org:"Forage", desc:"A simulation-based program covering GenAI-powered data analytics workflows.", link:"#"}
+  {title:"Java Full Stack Development Internship", org:"Retech Solutions Pvt. Ltd.", desc:"Completed a 1-month offline internship in Full Stack Development (Java), building the Bill Payment Management System. (Jul 14 – Aug 14, 2025)", type:"retech"},
+  {title:"GenAI-Powered Data Analytics Job Simulation", org:"Forage (TATA)", desc:"Completed practical tasks in exploratory data analysis, AI-driven delinquency prediction, business report & data storytelling, and AI-driven collections strategy. (December 2025)", type:"forage"}
 ];
 
-/* ============ RENDER ============ */
+/* ============ RENDER SKILLS ============ */
 const skillsGroups = document.getElementById('skillsGroups');
 skillGroups.forEach(g=>{
   const card = document.createElement('div');
@@ -696,8 +808,7 @@ skillGroups.forEach(g=>{
   skillsGroups.appendChild(card);
 });
 
-document.getElementById('expTech').innerHTML = expTech.map(t=>`<span class="tag">${t}</span>`).join('');
-
+/* ============ RENDER PROJECTS ============ */
 const projectGrid = document.getElementById('projectGrid');
 projects.forEach(p=>{
   const card = document.createElement('div');
@@ -716,22 +827,39 @@ projects.forEach(p=>{
   card.addEventListener('click', (e)=>{ if(!e.target.closest('a')) openModal(p.id); });
   projectGrid.appendChild(card);
 });
-const placeholder = document.createElement('div');
-placeholder.className='pcard placeholder-card reveal';
-placeholder.innerHTML = `<span class="mono">// your-next-project<br>coming soon</span>`;
-projectGrid.appendChild(placeholder);
 
+/* ============ RENDER CERTIFICATIONS ============ */
 const certGrid = document.getElementById('certGrid');
 certifications.forEach(c=>{
   const el = document.createElement('div');
   el.className='cert-card reveal';
-  el.innerHTML = `
-    <div>
-      <h3>${c.title}</h3>
-      <div class="org">${c.org}</div>
-      <p>${c.desc}</p>
-    </div>
-    <a class="btn btn-outline" href="${c.link}" target="_blank" rel="noopener">View Certificate</a>`;
+  if(c.type === 'retech'){
+    el.innerHTML = `
+      <div>
+        <h3>${c.title}</h3>
+        <div class="org">${c.org}</div>
+        <p>${c.desc}</p>
+      </div>
+      <button class="btn btn-primary open-retech-modal">View Certificate</button>`;
+    el.querySelector('.open-retech-modal').addEventListener('click', openRetechModal);
+  } else if(c.type === 'forage'){
+    el.innerHTML = `
+      <div>
+        <h3>${c.title}</h3>
+        <div class="org">${c.org}</div>
+        <p>${c.desc}</p>
+      </div>
+      <button class="btn btn-primary open-forage-modal">View Certificate</button>`;
+    el.querySelector('.open-forage-modal').addEventListener('click', openForageModal);
+  } else {
+    el.innerHTML = `
+      <div>
+        <h3>${c.title}</h3>
+        <div class="org">${c.org}</div>
+        <p>${c.desc}</p>
+      </div>
+      <a class="btn btn-outline" href="${c.link}" target="_blank" rel="noopener">View Certificate</a>`;
+  }
   certGrid.appendChild(el);
 });
 
@@ -751,12 +879,15 @@ window.addEventListener('mousemove', (e) => {
   glow.style.top = e.clientY + 'px';
 });
 
-/* ============ MODAL ============ */
+/* ============ PROJECT MODAL ============ */
 const overlay = document.getElementById('modalOverlay');
 const modalContent = document.getElementById('modalContent');
 function openModal(id){
   const p = projects.find(x=>x.id===id);
   if(!p) return;
+  closeResumeModal();
+  closeRetechModal();
+  closeForageModal();
   modalContent.innerHTML = `
     <h3>${p.name}</h3>
     <div class="modal-sub">${p.sub}</div>
@@ -776,11 +907,74 @@ function openModal(id){
 }
 document.getElementById('modalClose').addEventListener('click', closeModal);
 overlay.addEventListener('click', (e)=>{ if(e.target===overlay) closeModal(); });
-document.addEventListener('keydown', (e)=>{ if(e.key==='Escape') closeModal(); });
 function closeModal(){ overlay.classList.remove('open'); document.body.style.overflow=''; }
 document.addEventListener('click', (e)=>{
   const btn = e.target.closest('.view-project');
   if(btn) openModal(btn.dataset.id);
+});
+
+/* ============ RESUME MODAL ============ */
+const resumeModal = document.getElementById('resumeModal');
+const resumeModalClose = document.getElementById('resumeModalClose');
+function openResumeModal(e){
+  if(e) e.preventDefault();
+  closeRetechModal();
+  closeForageModal();
+  resumeModal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeResumeModal(){
+  resumeModal.classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.getElementById('navResumeBtn').addEventListener('click', openResumeModal);
+document.getElementById('heroResumeBtn').addEventListener('click', openResumeModal);
+document.getElementById('ctaResumeBtn').addEventListener('click', openResumeModal);
+resumeModalClose.addEventListener('click', closeResumeModal);
+resumeModal.addEventListener('click', (e) => { if(e.target === resumeModal) closeResumeModal(); });
+
+/* ============ RETECH CERTIFICATE MODAL ============ */
+const retechModal = document.getElementById('retechModal');
+const retechModalClose = document.getElementById('retechModalClose');
+function openRetechModal(e){
+  if(e) e.preventDefault();
+  closeResumeModal();
+  closeForageModal();
+  retechModal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeRetechModal(){
+  retechModal.classList.remove('open');
+  document.body.style.overflow = '';
+}
+retechModalClose.addEventListener('click', closeRetechModal);
+retechModal.addEventListener('click', (e) => { if(e.target === retechModal) closeRetechModal(); });
+
+/* ============ FORAGE / TATA CERTIFICATE MODAL ============ */
+const forageModal = document.getElementById('forageModal');
+const forageModalClose = document.getElementById('forageModalClose');
+function openForageModal(e){
+  if(e) e.preventDefault();
+  closeResumeModal();
+  closeRetechModal();
+  forageModal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeForageModal(){
+  forageModal.classList.remove('open');
+  document.body.style.overflow = '';
+}
+forageModalClose.addEventListener('click', closeForageModal);
+forageModal.addEventListener('click', (e) => { if(e.target === forageModal) closeForageModal(); });
+
+/* ============ KEYBOARD: ESC closes any modal ============ */
+document.addEventListener('keydown', (e)=>{
+  if(e.key==='Escape'){
+    closeModal();
+    closeResumeModal();
+    closeRetechModal();
+    closeForageModal();
+  }
 });
 
 /* ============ NAV: scroll state + mobile menu ============ */
@@ -827,8 +1021,8 @@ const termLines = [
   {p:true, t:"stack --list"},
   {ok:true, t:"✓ Java + Spring Boot"},
   {ok:true, t:"✓ React.js + JavaScript"},
+  {ok:true, t:"✓ Python + AI/ML"},
   {ok:true, t:"✓ MySQL + JDBC"},
-  {ok:true, t:"✓ REST APIs"},
   {p:true, t:"status"},
   {ok:true, t:"✓ open to full-stack roles — 2026"}
 ];
@@ -879,7 +1073,7 @@ form.addEventListener('submit', function(e){
     if(!ok) valid = false;
   });
   if(!valid) return;
-  status.textContent = "Form validated. Connect an email service (EmailJS / Formspree) to actually send this message.";
+  status.textContent = "✓ Form validated successfully! Connect an email service (EmailJS / Formspree) to start receiving messages.";
   status.className = 'show success';
   form.reset();
 });
